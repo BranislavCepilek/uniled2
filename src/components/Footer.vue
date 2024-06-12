@@ -36,7 +36,7 @@
       <div class="container mx-auto py-6 px-5 flex flex-wrap flex-col sm:flex-row justify-center">
         <p class="font-montserrat-semibold text-[12px] md:text-[16px] lg:text-[16px] text-primary text-center">Copyright
           ©
-          Uniled 2024</p>
+          UNILED 2024</p>
       </div>
     </div>
   </footer>
