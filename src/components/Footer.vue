@@ -12,7 +12,7 @@
           <h2
             class="font-montserrat-semibold text-[18px] md:text-[24px] lg:text-[24px] text-headings tracking-widest mb-3 text-primary">
             Firemné údaje:</h2>
-          <p class="font-montserrat text-[14px] md:text-[18px] lg:text-[18px] text-[#E8D7A0]">Uniled s.r.o.
+          <p class="font-montserrat text-[14px] md:text-[18px] lg:text-[18px] text-[#E8D7A0]">UNILED s.r.o.
             <br> Piaristická 72/31 <br>949 01 Nitra
           </p>
         </div>
