@@ -8,31 +8,31 @@
       </div>
       <div class="flex flex-wrap flex-col md:flex-row lg:flex-row md:-m-2 -m-1">
         <div class="flex flex-wrap w-full md:w-1/2 lg:w-1/2">
-          <div class="md:p-2 p-1 w-1/2">
+          <div class="md:p-2 p-1 w-full">
             <img alt="gallery" class="w-full object-cover h-full object-center block rounded-2xl"
-              src="https://dummyimage.com/500x300">
+              src="../assets/hviezdy.jpeg">
           </div>
-          <div class="md:p-2 p-1 w-1/2">
+          <!-- <div class="md:p-2 p-1 w-1/2">
             <img alt="gallery" class="w-full object-cover h-full object-center block rounded-2xl"
               src="https://dummyimage.com/501x301">
-          </div>
+          </div> -->
           <div class="md:p-2 p-1 w-full">
             <img alt="gallery" class="w-full h-full object-cover object-center block rounded-2xl"
-              src="https://dummyimage.com/600x360">
+              src="../assets/anjeli-a-hviezdy.jpeg">
           </div>
         </div>
         <div class="flex flex-wrap w-full md:w-1/2 lg:w-1/2">
           <div class="md:p-2 p-1 w-full">
             <img alt="gallery" class="w-full h-full object-cover object-center block rounded-2xl"
-              src="https://dummyimage.com/601x361">
+              src="../assets/hviezdy2.jpeg">
           </div>
-          <div class="md:p-2 p-1 w-1/2">
+          <!-- <div class="md:p-2 p-1 w-1/2">
             <img alt="gallery" class="w-full object-cover h-full object-center block rounded-2xl"
               src="https://dummyimage.com/502x302">
-          </div>
-          <div class="md:p-2 p-1 w-1/2">
+          </div> -->
+          <div class="md:p-2 p-1 w-full">
             <img alt="gallery" class="w-full object-cover h-full object-center block rounded-2xl"
-              src="https://dummyimage.com/503x303">
+              src="../assets/vlocky.jpeg">
           </div>
         </div>
       </div>
