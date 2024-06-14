@@ -10,7 +10,7 @@
         <div class="flex flex-wrap w-full md:w-1/2 lg:w-1/2">
           <div class="md:p-2 p-1 w-full">
             <img alt="gallery" class="w-full object-cover h-full object-center block rounded-2xl"
-              src="../assets/hviezdy.jpeg">
+              src="https://s3.eu-central-1.amazonaws.com/uniled.sk/foto/katalog/hviezdy.jpeg">
           </div>
           <!-- <div class="md:p-2 p-1 w-1/2">
             <img alt="gallery" class="w-full object-cover h-full object-center block rounded-2xl"
@@ -18,13 +18,13 @@
           </div> -->
           <div class="md:p-2 p-1 w-full">
             <img alt="gallery" class="w-full h-full object-cover object-center block rounded-2xl"
-              src="../assets/anjeli-a-hviezdy.jpeg">
+              src="https://s3.eu-central-1.amazonaws.com/uniled.sk/foto/katalog/anjeli-a-hviezdy.jpeg">
           </div>
         </div>
         <div class="flex flex-wrap w-full md:w-1/2 lg:w-1/2">
           <div class="md:p-2 p-1 w-full">
             <img alt="gallery" class="w-full h-full object-cover object-center block rounded-2xl"
-              src="../assets/hviezdy2.jpeg">
+              src="https://s3.eu-central-1.amazonaws.com/uniled.sk/foto/katalog/hviezdy2.jpeg">
           </div>
           <!-- <div class="md:p-2 p-1 w-1/2">
             <img alt="gallery" class="w-full object-cover h-full object-center block rounded-2xl"
@@ -32,7 +32,7 @@
           </div> -->
           <div class="md:p-2 p-1 w-full">
             <img alt="gallery" class="w-full object-cover h-full object-center block rounded-2xl"
-              src="../assets/vlocky.jpeg">
+              src="https://s3.eu-central-1.amazonaws.com/uniled.sk/foto/katalog/vlocky.jpeg">
           </div>
         </div>
       </div>
