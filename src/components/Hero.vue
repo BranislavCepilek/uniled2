@@ -31,7 +31,7 @@
                     <iframe src="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf" style="width: 400px; height: 500px;" frameborder="0" allowfullscreen>This is iframe</iframe>    
                 </div>
                 <div class="flex justify-center">
-                    <button v-on:click="clickedDownload()" class="inline-flex bg-secondary border-0 py-3 px-14 focus:outline-none rounded-2xl text-lg text-paragraphs mt-[80px]">DOWNLOAD</button>
+                    <button v-on:click="onDownloadClick()" class="inline-flex bg-secondary border-0 py-3 px-14 focus:outline-none rounded-2xl text-lg text-paragraphs mt-[80px]">DOWNLOAD</button>
                 </div>
             </div>
         </div>
@@ -39,15 +39,33 @@
 </template>
 
 <script lang="ts">
+import axios from 'axios';
 export default {
     name: "Hero",
     methods: {
         clickedDownload(){
+            console.log(axios.isCancel('something'));
             const link = document.createElement('a');
             link.href = 'UNILED_katalog_2024.pdf';
             link.setAttribute('download', 'UNILED_katalog_2024.pdf');
             document.body.appendChild(link);
             link.click();
+        },
+        onDownloadClick(){
+            axios({
+                url: 'UNILED_katalog_2024.pdf',
+                method: 'GET',
+                responseType: 'blob',
+            }).then((response) => {
+                var fileURL = window.URL.createObjectURL(new Blob([response.data]));
+                var fileLink = document.createElement('a');
+
+                fileLink.href = fileURL;
+                fileLink.setAttribute('download', 'katalog.pdf')
+                document.body.appendChild(fileLink);
+
+                fileLink.click();
+            });
         }
     }
 }
