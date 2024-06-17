@@ -11,16 +11,24 @@
                     váš domov alebo podnik. Kliknite na tlačidlo nižšie a získajte prístup k nášmu najnovšiemu katalógu.
             </p>
                 <div class="flex justify-center">
-                    <a href="../../public/UNILED_katalog_2024.pdf" 
-                    class="inline-flex bg-secondary border-0 py-3 px-14 focus:outline-none rounded-2xl text-lg text-paragraphs mt-[80px]" 
-                    download>Stiahnuť</a>        
+                    <a href="UNILED_katalog_2024.pdf" 
+                    class="inline-flex bg-secondary border-0 py-3 px-14 focus:outline-none rounded-2xl text-lg text-paragraphs mt-[80px]" target="_blank"
+                    download>Stiahnuť from public</a>        
+                </div>
+                <div class="flex justify-center">
+                    <a href="../assets/UNILED_katalog_2024.pdf" 
+                    class="inline-flex bg-secondary border-0 py-3 px-14 focus:outline-none rounded-2xl text-lg text-paragraphs mt-[80px]" target="_blank"
+                    download>Stiahnuť from assets</a>        
+                </div>
+                <div class="flex justify-center">
+                    <object src="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf" type="application/pdf" width="400" height="500" download>This is object to be downloaded</object>
                 </div>
                 <div class="flex justify-center">
                     <!-- <a href="" download="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf"><button
                             class="inline-flex bg-secondary border-0 py-3 px-14 focus:outline-none rounded-2xl text-lg text-paragraphs mt-[80px]">Stiahnuť
                             katalóg</button></a>    
                     <object src="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf" type="application/pdf" width="400" height="500"></object>  -->
-                    <iframe src="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf" style="width: 400px; height: 500px;" frameborder="0" allowfullscreen></iframe>    
+                    <iframe src="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf" style="width: 400px; height: 500px;" frameborder="0" allowfullscreen>This is iframe</iframe>    
                 </div>
             </div>
         </div>
