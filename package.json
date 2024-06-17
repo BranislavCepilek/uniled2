@@ -12,9 +12,10 @@
   "dependencies": {
     "@aws-amplify/ui-vue": "^4.2.8",
     "@vue/cli": "^5.0.8",
-    "aws-amplify": "^6.2.0",
     "@vueuse/motion": "^2.0.0",
     "aos": "^2.3.4",
+    "aws-amplify": "^6.2.0",
+    "pdfjs-dist": "^4.3.136",
     "pinia": "^2.1.6",
     "taos": "^1.0.5",
     "vue": "^3.4.21",
