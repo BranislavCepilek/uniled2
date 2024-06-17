@@ -11,7 +11,9 @@
                     váš domov alebo podnik. Kliknite na tlačidlo nižšie a získajte prístup k nášmu najnovšiemu katalógu.
             </p>
                 <div class="flex justify-center">
-                    <a href="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf" class="inline-flex bg-secondary border-0 py-3 px-14 focus:outline-none rounded-2xl text-lg text-paragraphs mt-[80px]" download="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf">Stiahnuť</a>        
+                    <a href="../../public/UNILED_katalog_2024.pdf" 
+                    class="inline-flex bg-secondary border-0 py-3 px-14 focus:outline-none rounded-2xl text-lg text-paragraphs mt-[80px]" 
+                    download>Stiahnuť</a>        
                 </div>
                 <div class="flex justify-center">
                     <!-- <a href="" download="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf"><button
