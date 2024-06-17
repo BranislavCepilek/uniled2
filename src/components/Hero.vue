@@ -30,6 +30,9 @@
                     <object src="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf" type="application/pdf" width="400" height="500"></object>  -->
                     <iframe src="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf" style="width: 400px; height: 500px;" frameborder="0" allowfullscreen>This is iframe</iframe>    
                 </div>
+                <div class="flex justify-center">
+                    <button v-on:click="clickedDownload()" class="inline-flex bg-secondary border-0 py-3 px-14 focus:outline-none rounded-2xl text-lg text-paragraphs mt-[80px]">DOWNLOAD</button>
+                </div>
             </div>
         </div>
     </section>
@@ -37,7 +40,16 @@
 
 <script lang="ts">
 export default {
-    name: "Hero"
+    name: "Hero",
+    methods: {
+        clickedDownload(){
+            const link = document.createElement('a');
+            link.href = 'UNILED_katalog_2024.pdf';
+            link.setAttribute('download', 'UNILED_katalog_2024.pdf');
+            document.body.appendChild(link);
+            link.click();
+        }
+    }
 }
 </script>
 
