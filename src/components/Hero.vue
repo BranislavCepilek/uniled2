@@ -49,6 +49,10 @@ export default {
                 url: '/files/UNILED_katalog_2024.pdf',
                 method: 'GET',
                 responseType: 'blob', 
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/pdf'
+                }
             }).then((response) => {
                 console.log("Success", response)
                 var fileURL = window.URL.createObjectURL(new Blob([response.data]));
