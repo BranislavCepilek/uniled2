@@ -31,7 +31,8 @@
                     <iframe src="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf" style="width: 400px; height: 500px;" frameborder="0" allowfullscreen>This is iframe</iframe>    
                 </div> -->
                 <div class="flex justify-center">
-                    <button v-on:click="onDownloadClick()" class="inline-flex bg-secondary border-0 py-3 px-14 focus:outline-none rounded-2xl text-lg text-paragraphs mt-[80px]">DOWNLOAD</button>
+                    <button v-on:click="onDownloadClick()" 
+                    class="inline-flex bg-secondary border-0 py-3 px-14 focus:outline-none rounded-2xl text-lg text-paragraphs mt-[80px]">DOWNLOAD</button>
                 </div>
             </div>
         </div>
@@ -49,13 +50,16 @@ export default {
                 method: 'GET',
                 responseType: 'blob', 
             }).then((response) => {
+                console.log("Success", response)
                 var fileURL = window.URL.createObjectURL(new Blob([response.data]));
                 var fileLink = document.createElement('a');
-
+                
                 fileLink.href = fileURL;
                 fileLink.setAttribute('download', 'katalog.pdf')
                 document.body.appendChild(fileLink);
-
+                
+                console.log(fileURL);
+                console.log(fileLink);
                 fileLink.click();
             });
         }
