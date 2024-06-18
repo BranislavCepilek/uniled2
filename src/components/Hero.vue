@@ -10,7 +10,7 @@
                     Preskúmajte našu širokú ponuku profesionálneho vianočného osvetlenia a nájdite perfektné svetlá pre
                     váš domov alebo podnik. Kliknite na tlačidlo nižšie a získajte prístup k nášmu najnovšiemu katalógu.
             </p>
-                <div class="flex justify-center">
+                <!-- <div class="flex justify-center">
                     <a href="UNILED_katalog_2024.pdf" 
                     class="inline-flex bg-secondary border-0 py-3 px-14 focus:outline-none rounded-2xl text-lg text-paragraphs mt-[80px]" target="_blank"
                     download>Stiahnuť from public</a>        
@@ -24,12 +24,12 @@
                     <object src="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf" type="application/pdf" width="400" height="500" download>This is object to be downloaded</object>
                 </div>
                 <div class="flex justify-center">
-                    <!-- <a href="" download="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf"><button
+                    <a href="" download="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf"><button
                             class="inline-flex bg-secondary border-0 py-3 px-14 focus:outline-none rounded-2xl text-lg text-paragraphs mt-[80px]">Stiahnuť
                             katalóg</button></a>    
-                    <object src="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf" type="application/pdf" width="400" height="500"></object>  -->
+                    <object src="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf" type="application/pdf" width="400" height="500"></object> 
                     <iframe src="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf" style="width: 400px; height: 500px;" frameborder="0" allowfullscreen>This is iframe</iframe>    
-                </div>
+                </div> -->
                 <div class="flex justify-center">
                     <button v-on:click="onDownloadClick()" class="inline-flex bg-secondary border-0 py-3 px-14 focus:outline-none rounded-2xl text-lg text-paragraphs mt-[80px]">DOWNLOAD</button>
                 </div>
@@ -43,19 +43,11 @@ import axios from 'axios';
 export default {
     name: "Hero",
     methods: {
-        clickedDownload(){
-            console.log(axios.isCancel('something'));
-            const link = document.createElement('a');
-            link.href = 'UNILED_katalog_2024.pdf';
-            link.setAttribute('download', 'UNILED_katalog_2024.pdf');
-            document.body.appendChild(link);
-            link.click();
-        },
         onDownloadClick(){
             axios({
                 url: 'UNILED_katalog_2024.pdf',
                 method: 'GET',
-                responseType: 'blob',
+                responseType: 'blob', 
             }).then((response) => {
                 var fileURL = window.URL.createObjectURL(new Blob([response.data]));
                 var fileLink = document.createElement('a');
