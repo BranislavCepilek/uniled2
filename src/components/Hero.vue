@@ -35,7 +35,10 @@
                     class="inline-flex bg-secondary border-0 py-3 px-14 focus:outline-none rounded-2xl text-lg text-paragraphs mt-[80px]">DOWNLOAD</button>
                 </div>
                 <div>
-                    <a :href="pdfUrl" download="katalog-gpt.pdf" target="_blank"><button>Stiahni katalog</button></a>
+                    <a :href="pdfUrl" download="katalog-gpt.pdf" target="_blank" style="color: greenyellow"><button>Stiahni katalog</button></a>
+                </div>
+                <div style="color: aqua;">
+                    <button @click="downloadPDF">Stiahnut PDF</button>
                 </div>
             </div>
         </div>
@@ -54,7 +57,7 @@ export default {
     methods: {
         onDownloadClick(){
             axios({
-                url: "/files/UNILED_katalog_2024.pdf",
+                url: this.pdfUrl,
                 method: 'GET',
                 responseType: 'blob', 
                 headers: {
@@ -73,7 +76,16 @@ export default {
                 console.log(fileURL);
                 console.log(fileLink);
                 fileLink.click();
+                document.body.removeChild(fileLink);
             });
+        },
+        downloadPDF(){
+            const link = document.createElement('a');
+            link.href = this.pdfUrl;
+            link.setAttribute('download', 'katalogGPT.pdf');
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
     }
 }
