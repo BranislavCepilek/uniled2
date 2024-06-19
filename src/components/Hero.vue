@@ -46,7 +46,7 @@ export default {
     methods: {
         onDownloadClick(){
             axios({
-                url: 'https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf',
+                url: 'UNILED_katalog_2024.pdf',
                 method: 'GET',
                 responseType: 'blob', 
                 headers: {
