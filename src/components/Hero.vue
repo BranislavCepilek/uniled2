@@ -34,6 +34,9 @@
                     <button v-on:click="onDownloadClick()" 
                     class="inline-flex bg-secondary border-0 py-3 px-14 focus:outline-none rounded-2xl text-lg text-paragraphs mt-[80px]">DOWNLOAD</button>
                 </div>
+                <div>
+                    <a :href="pdfUrl" download="katalog-gpt.pdf" target="_blank"><button>Stiahni katalog</button></a>
+                </div>
             </div>
         </div>
     </section>
@@ -43,6 +46,11 @@
 import axios from 'axios';
 export default {
     name: "Hero",
+    data() {
+        return {
+            pdfUrl: 'https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf',
+        }
+    },
     methods: {
         onDownloadClick(){
             axios({
