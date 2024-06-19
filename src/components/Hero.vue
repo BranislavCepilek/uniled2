@@ -50,7 +50,7 @@ export default {
                 method: 'GET',
                 responseType: 'blob', 
                 headers: {
-                    'Content-Type': 'application/json',
+                    'Content-Type': 'application/pdf',
                     'Accept': 'application/pdf'
                 }
             }).then((response) => {
