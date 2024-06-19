@@ -62,7 +62,11 @@ export default {
                 responseType: 'blob', 
                 headers: {
                     'Content-Type': 'application/pdf',
-                    'Accept': 'application/pdf'
+                    'Accept': 'application/pdf',
+                    "Access-Control-Allow-Origin": "*",
+                    "Access-Control-Allow-Headers": "*",
+                    "Access-Control-Allow-Methods": "GET, OPTIONS, POST, PUT, DELETE",
+                    "Access-Control-Max-Age": "86400"
                 }
             }).then((response) => {
                 console.log("Success", response)
