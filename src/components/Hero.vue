@@ -47,7 +47,7 @@ export default {
         onDownloadClick(){
             axios({
                 baseURL: "https://main.d3pu8oljuui1n.amplifyapp.com",
-                url: "/UNILED_katalog_2024.pdf",
+                url: "/files/UNILED_katalog_2024.pdf",
                 method: 'GET',
                 responseType: 'blob', 
                 headers: {
