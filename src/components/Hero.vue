@@ -30,7 +30,7 @@
                     <object src="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf" type="application/pdf" width="400" height="500"></object> 
                     <iframe src="https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf" style="width: 400px; height: 500px;" frameborder="0" allowfullscreen>This is iframe</iframe>    
                 </div> -->
-                <div class="flex justify-center">
+                <!-- <div class="flex justify-center">
                     <button v-on:click="onDownloadClick()" 
                     class="inline-flex bg-secondary border-0 py-3 px-14 focus:outline-none rounded-2xl text-lg text-paragraphs mt-[80px]">DOWNLOAD</button>
                 </div>
@@ -39,7 +39,7 @@
                 </div>
                 <div style="color: aqua;">
                     <button @click="downloadPDF">Stiahnut PDF</button>
-                </div>
+                </div> -->
                 <div class="flex justify-center">
                     <iframe style="border: 1px solid #777;" src="https://indd.adobe.com/embed/c8c884ea-f779-45c4-967e-a881f39f1e02?startpage=1&allowFullscreen=true" width="525px" height="371px" frameborder="0" allowfullscreen=""></iframe>
                 </div>
