@@ -40,6 +40,9 @@
                 <div style="color: aqua;">
                     <button @click="downloadPDF">Stiahnut PDF</button>
                 </div>
+                <div class="flex justify-center">
+                    <iframe style="border: 1px solid #777;" src="https://indd.adobe.com/embed/c8c884ea-f779-45c4-967e-a881f39f1e02?startpage=1&allowFullscreen=true" width="525px" height="371px" frameborder="0" allowfullscreen=""></iframe>
+                </div>
             </div>
         </div>
     </section>
@@ -51,7 +54,8 @@ export default {
     name: "Hero",
     data() {
         return {
-            pdfUrl: 'https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf',
+            // pdfUrl: 'https://s3.eu-central-1.amazonaws.com/uniled.sk/katalog/UNILED_katalog_2024.pdf',
+            pdfUrl: 'https://main.d3pu8oljuui1n.amplifyapp.com/files/UNILED_katalog_2024.pdf'
         }
     },
     methods: {
@@ -63,8 +67,8 @@ export default {
                 headers: {
                     'Content-Type': 'application/pdf',
                     'Accept': 'application/pdf',
-                    "Access-Control-Allow-Origin": "*",
-                    "Access-Control-Allow-Headers": "*",
+                    "Access-Control-Allow-Origin": "true",
+                    "Access-Control-Allow-Headers": "true",
                     "Access-Control-Allow-Methods": "GET, OPTIONS, POST, PUT, DELETE",
                     "Access-Control-Max-Age": "86400"
                 }
