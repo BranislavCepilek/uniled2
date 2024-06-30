@@ -41,7 +41,7 @@
                     <button @click="downloadPDF">Stiahnut PDF</button>
                 </div> -->
                 <div class="flex justify-center">
-                    <iframe style="border: 1px solid #777;" src="https://indd.adobe.com/embed/c8c884ea-f779-45c4-967e-a881f39f1e02?startpage=1&allowFullscreen=true" width="525px" height="371px" frameborder="0"></iframe>
+                    <iframe style="border: 1px solid #777;" src="https://indd.adobe.com/embed/c8c884ea-f779-45c4-967e-a881f39f1e02?startpage=1&allowFullscreen=true" width="525px" height="371px" frameborder="0" allow="fullscreen"></iframe>
                 </div>
             </div>
         </div>
