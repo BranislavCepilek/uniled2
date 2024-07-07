@@ -3,12 +3,12 @@
         <div class="container mx-auto flex px-4 lg:py-42 md:py-42 py-52 items-center justify-center flex-col">
             <div class="text-center lg:w-2/3 w-full">
                 <h1 class="font-montserrat-black md:text-[82px] lg:text-[82px] text-[52px] mb-4 text-secondary">UNILED
-                    s.r.o
+                    s.r.o.
                 </h1>
                 <p
                     class="font-montserrat-regular md:text-[24px] lg:text-[24px] text-[24px] mt-[40px] text-paragraphs tracking-widest">
                     Preskúmajte našu širokú ponuku profesionálneho vianočného osvetlenia a nájdite perfektné svetlá pre
-                    váš domov alebo podnik. Kliknite na tlačidlo nižšie a získajte prístup k nášmu najnovšiemu katalógu.
+                    váš domov alebo podnik. <br/><br/>
             </p>
                 <!-- <div class="flex justify-center">
                     <a href="UNILED_katalog_2024.pdf" 
